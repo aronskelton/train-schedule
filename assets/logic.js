@@ -1,6 +1,6 @@
 //took a lot of this code from online still having trouble with firebase as well as moment.js.. I will be adding to this 
   
-  
+
   var config = {
     apiKey: "AIzaSyAikHRh-wt18aL5f_WtkAYHXtnuOdQzS9A",
     authDomain: "time-73498.firebaseapp.com",
@@ -9,8 +9,9 @@
     storageBucket: "time-73498.appspot.com",
     messagingSenderId: "851404188176"
   };
+  firebase.initializeApp(config);
 
-firebase.initializeApp(config);
+  var database = firebase.database(); 
 
 
 var currentTime = moment();
